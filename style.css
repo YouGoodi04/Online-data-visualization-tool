@@ -1,0 +1,49 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group select, .form-group input {
+    margin-top: 5px;
+}
+#generateBtn, #exportBtn {
+    margin-top: 20px;
+}
+canvas {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+}
+.footer {
+width: 100%;
+bottom: 0;
+}
+.footer .copyright {
+text-align: center;
+margin-left: 30px;
+color: #949494;
+font-size: 12px;
+}
+.footer .copyright a {
+text-decoration: none;
+color: #3a85ff;
+}
+#h1,#p1{
+text-align: center;
+}
