@@ -1,6 +1,7 @@
 # YouGood 数据可视化工具
 
 欢迎来到 YouGood 数据可视化工具，这是一个基于 Web 的应用程序，允许用户上传 CSV 或 XLSX 格式的数据文件，并将其转换为多种类型的图表，以便于数据的可视化分析。
+
 在线体验网址https://Onlinedata.yougood.love/
 ## 特点
 
