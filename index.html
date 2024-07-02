@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouGood &#8211; 数据可视化工具</title>
+    <link rel="shortcut icon" href="https://nav.yougood.love/img/icon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/">
+</head>
+<body>
+    <div class="container">
+        <h1 id="h1">数据可视化工具</h1>
+        <p id="p1">网站由<a href="http://nivv.top/">YouGood</a>制作</p>
+        <input type="file" id="dataFile" accept=".csv,.xlsx">
+        <span>仅支持xlsx,csv</span>
+        <div class="form-group">
+            <label for="chartType">选择图表类型:</label>
+            <select class="form-select" id="chartType">
+                <option value="line">折线图</option>
+                <option value="bar">直方图</option>
+                <option value="scatter">散点图</option>
+                <option value="pie">饼图</option>
+                <option value="boxplot">箱线图</option>
+                <option value="area">面积图</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="xAxis">选择X轴数据:</label>
+            <select class="form-select" id="xAxis"></select>
+        </div>
+        <div class="form-group">
+            <label for="yAxis">选择Y轴数据:</label>
+            <select class="form-select" id="yAxis"></select>
+        </div>
+        <div class="form-group">
+            <label for="xMin">X轴最小值:</label>
+            <input type="number" id="xMin" class="form-control" placeholder="不输入为默认值">
+        </div>
+        <div class="form-group">
+            <label for="xMax">X轴最大值:</label>
+            <input type="number" id="xMax" class="form-control" placeholder="不输入为默认值">
+        </div>
+        <div class="form-group">
+            <label for="yMin">Y轴最小值:</label>
+            <input type="number" id="yMin" class="form-control" placeholder="不输入为默认值">
+        </div>
+        <div class="form-group">
+            <label for="yMax">Y轴最大值:</label>
+            <input type="number" id="yMax" class="form-control" placeholder="不输入为默认值">
+        </div>
+        <button id="generateBtn" class="btn btn-primary">生成</button>
+        <canvas id="myChart"></canvas>
+        <button id="exportBtn" class="btn btn-primary">导出PNG</button>
+        <footer class="footer">
+            <div class="copyright">
+                <div >
+                    Copyright © 2024
+                    <a href="http://nivv.top/">YouGood</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    
+    
+</body>
+</html>
