@@ -166,6 +166,7 @@ document.getElementById('xAxis').addEventListener('change', updateChart);
 document.getElementById('yAxis').addEventListener('change', updateChart);
 document.getElementById('chartType').addEventListener('change', updateChart);
 document.getElementById('generateBtn').addEventListener('click', updateChart);
+// PNG下载
 document.getElementById('exportBtn').addEventListener('click', function() {
     var link = document.createElement('a');
     link.href = chart.toBase64Image();
